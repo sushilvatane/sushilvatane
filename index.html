@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio | SV </title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="logo.png">
+            <a href="" target="_blank">SushilVatane</a>
+        </div>
+        <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <!-- <li><a href="#feedback">Feedback</a></li> -->
+        </ul>
+        <button class="contact-btn">Contact Me</button>
+        <button class="dark-mode-toggle">🌙</button>
+        <button id="menuButton" onclick="openMenu()">
+            <i class='bx bx-menu'></i>
+        </button>
+    </nav>
+
+    <div class="main" id="main">
+        <div class="left">
+            <h5>Hey, I am Sushil</h5>
+            <h3>I create <span>Frontend Web</span> With Best User experience</h3>
+            <p>
+                My journey in web development has equipped me with a strong foundation in designing and implementing
+                responsive, efficient, and visually appealing web applications.
+            </p>
+            <button>Let's Do It !</button>
+        </div>
+        <div class="right">
+            <img src="myimg.png">
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <h5>My Skills</h5>
+        <h3>My Expertise</h3>
+        <div class="skill-items">
+            <div class="item">
+                <div class="icon"><i class='bx bx-directions'></i></div>
+                <h4>HTML & CSS:</h4>
+                <p>
+                    Proficient in crafting semantic HTML and modular CSS for clean and maintainable code.
+
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-bookmark-heart'></i></div>
+                <h4>JavaScript</h4>
+                <p>
+                    Skilled in using JavaScript to add interactivity and enhance user experience.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxl-figma'></i></i></div>
+                <h4>Responsive Design</h4>
+                <p>
+                    Experienced in creating websites that look great on any device, from desktops to mobile phones.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-code-alt'></i></i></div>
+                <h4>Version Control</h4>
+                <p>
+                    Familiar with Git and GitHub for efficient code management and collaboration.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="left">
+            <img src="myimg3.png">
+        </div>
+        <div class="right">
+            <h3>About Me</h3>
+            <p>
+                Hi, I'm Sushil Vatane, a dedicated frontend developer with a passion for creating intuitive and dynamic
+                websites. With 9 months of hands-on experience, I specialize in building user-friendly interfaces using
+                HTML, CSS, and JavaScript.
+            </p>
+            <p>
+                I am constantly learning and keeping up with the latest industry trends to refine my skills and stay
+                ahead in this fast-evolving field.
+            </p>
+        </div>
+    </div>
+<section class="portfolio-parent">
+    <div class="portfolio" id="portfolio">
+        <div class="header">
+            <div class="info">
+                <h5>Recent Projects</h5>
+                <h3>My Portfolio</h3>
+            </div>
+        </div>
+
+        <div class="portfo-items">
+            <div class="item">
+                <img src="sc-1.png">
+                <div class="info">
+                    <h4>Vintage Car's</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                    </p>
+                    <a href="./car/index.html">View<i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="sc-2.png">
+                <div class="info">
+                    <h4>Login page</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                    </p>
+                    <a href="./log in page/boi.html">View <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="sc-3.png">
+                <div class="info">
+                    <h4>Weather</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                    </p>
+                    <a href="./weather/index.html">View<i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <!-- <div class="feedback" id="feedback">
+        <h5>Clients Reviews</h5>
+        <h3>Customers Feedback</h3>
+        <div class="customers">
+            <div class="item">
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra.
+                </p>
+                <div class="user">
+                    <img src="us-1.png">
+                    <div class="info">
+                        <h5>Dianne Russell</h5>
+                        <p>Starbucks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra.
+                </p>
+                <div class="user">
+                    <img src="us-2.png">
+                    <div class="info">
+                        <h5>Kristian Watson</h5>
+                        <p>Louis Vuitton</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra.
+                </p>
+                <div class="user">
+                    <img src="us-3.png">
+                    <div class="info">
+                        <h5>Kathryn Murphy</h5>
+                        <p>McDonald's</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <footer class="footer">
+        <div class="top">
+            <div class="logo">
+                <img src="logo.png">
+                <a href="">SushilVatane</a>
+            </div>
+            <!-- <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul> -->
+            <div class="social-links">
+                <a href="https://github.com/sushilvatane"><i class='bx bxl-github'></i></a>
+                <a href="https://instagram.com/sushilvatane_96k"><i class='bx bxl-instagram'></i></a>
+                <a href="https://Wa.me/+918275825369"><i class='bx bxl-whatsapp'></i></a>
+                <!-- <a href="#"><i class='bx bxl-linkedin-square'></i></a> -->
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="bottom">
+            <p>
+                Asus &COPY;
+            </p>
+            <div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies Setting</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
