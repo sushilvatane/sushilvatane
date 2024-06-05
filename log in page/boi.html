@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="boisty.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <h4>Login</h4>
+        </header>
+        <form>
+            <div class="form_wrapper">
+                <input type="text" id="input"  class="inputText" required>
+                <label for="input">Username</label>
+                <i class="material-icons">person</i>
+            </div>
+            <div class="form_wrapper">
+                <input type="password" id="password" class="inputPass" required>
+                <label for="input">password</label>
+                <i class="material-icons">lock</i>
+            </div>
+            <div class="remember_box">
+                <div class="remember">
+                    <input type="checkbox">
+                    Remember me
+                </div>
+                <a href="#">Forgot password ?</a>
+            </div>
+            <button type="submit" onclick="myFunction()">Login</button>
+            <div class="new_acc">
+                Don't have account ?
+                <a href="#">Sign up</a>
+            </div>
+        </form>
+
+    </main>
+    <script src="boijs.js"></script>
+
+</body>
+
+</html>

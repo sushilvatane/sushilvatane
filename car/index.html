@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> AutoGems- Father Is Here !</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="imgs/hero-banner.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="imgs/hero-banner-bg.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="imgs/hero-bg.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">AutoGems<span class="span">.</span></a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="nav-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#car-menu" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-btn-group">
+        <button class="search-btn" aria-label="Search" data-search-btn>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <button class="btn btn-hover">Reservation</button>
+
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-container>
+
+    <div class="search-box">
+      <input type="search" name="search" aria-label="Search here" placeholder="Type keywords here..."
+        class="search-input">
+
+      <button class="search-submit" aria-label="Submit search" data-search-submit-btn>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+    </div>
+
+    <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
+
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" style="background-image: url('imgs/hero-bg2.jpg');">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Passion for Vintage</p>
+
+            <h2 class="h1 hero-title"> One Classic at a Time !</h2>
+
+            <p class="hero-text">Reviving Classic Elegance: Discover Our Vintage Cars</p>
+
+            <button class="btn">Book A Car</button>
+
+          </div>
+
+          <!-- <figure class="hero-banner">
+            <img src="imgs/hero-banner-bg.png" width="820" height="716" alt="" aria-hidden="true"
+              class="w-100 hero-img-bg">
+
+            <img src="imgs/hero-banner.png" width="700" height="637" loading="lazy" alt="banner" class="w-100 hero-img">
+          </figure> -->
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROMO
+      -->
+
+      <section class="section section-divider white promo">
+        <div class="container">
+
+          <ul class="promo-list has-scrollbar">
+
+            <li class="promo-item">
+              <div class="promo-card">
+                <h3 class="h3 card-title">Classic Sedans</h3>
+
+                <p class="card-text">
+                  Elegant and luxurious cars from the 1920s to 1950s, known for their spaciousness and stylish design,
+                  such asthe Mercedes-Benz 300
+                </p>
+
+                <img src="imgs/classic sedans.jpg" width="300" height="300" loading="lazy" alt="Classic Sedans"
+                  class="w-91 card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <h3 class="h3 card-title">Vintage Convertibles</h3>
+
+                <p class="card-text">
+                  Open-top cars that exude charm and style, popular in the mid-20th century, like the Ford Mustang
+                  Convertible or the Chevrolet Corvette.
+                </p>
+
+                <img src="imgs/vintage convertibles.jpg" width="300" height="300" loading="lazy"
+                  alt="Vintage Convertibles" class="w-91 card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+
+
+                <h3 class="h3 card-title">Antique Roadsters</h3>
+
+                <p class="card-text">
+                  Sporty and nimble two-seater cars, often with a long hood and sleek lines, epitomized by models like
+                  the MG TC or the Jaguar XK120.
+                </p>
+
+                <img src="imgs/Antique Roadsters.jpg" width="300" height="300" loading="lazy" alt="Antique Roadsters"
+                  class="w-91 card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+
+                <h3 class="h3 card-title">Vintage Muscle Cars</h3>
+
+                <p class="card-text">
+                  Powerful, high-performance American cars from the 1960s and 1970s,large engines and aggressive
+                  styling, such as the Ford Mustang GT.
+                </p>
+
+                <img src="imgs/vintage muscle cars.jpg" width="300" height="300" loading="lazy"
+                  alt="vintage muscle cars" class="w-91  card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+
+                <h3 class="h3 card-title">Luxury Limousines</h3>
+
+                <p class="card-text">
+                  Prestigious and opulent used for chauffeured transport, representing the pinnacle of automotive
+                  luxury, such as the Rolls-Royce Phantom Car.
+                </p>
+
+                <img src="imgs/Luxury Limousines.jpg" width="300" height="300" loading="lazy" alt="Luxury Limousines"
+                  class="w-91 card-banner">
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section section-divider gray about" id="about">
+        <div class="container">
+
+          <div class="about-banner">
+            <img src="imgs/banner-car----.png" loading="lazy">
+
+          </div>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">
+              Nostalgia Meets Performance.
+              <span class="span">Timeless Elegance!</span>
+            </h2>
+
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Connection to Royalty</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Exquisite Detailing</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Exclusive Ownership</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Luxury of a Bygone Era</span>
+              </li>
+
+            </ul>
+
+            <button class="btn btn-hover">Order Now</button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #car MENU
+      -->
+
+      <section class="section car-menu" id="car-menu">
+        <div class="container">
+
+          <p class="section-subtitle">Popular Car's </p>
+
+          <h2 class="h2 section-title">
+            These vehicles belong to<span class="span"> us.</span>
+          </h2>
+
+          <p class="section-text">
+            Own a Piece of Automotive Art.
+          </p>
+
+          <ul class="fiter-list">
+
+
+            <li>
+              <button id="RoyalenfildBtn" onclick="filterCars('All')" class="filter-btn">All</button>
+            </li>
+
+            <li>
+              <button id="FordBtn" onclick="filterCars('Ford')" class="filter-btn">Ford</button>
+            </li>
+
+            <li>
+              <button id="MustangBtn" onclick="filterCars('Jaguar')" class="filter-btn">jaguar</button>
+            </li>
+
+            <li>
+              <button id="DodgeBtn" onclick="filterCars('Dodge')" class="filter-btn">Dodge</button>
+            </li>
+
+          </ul>
+
+          <ul class="car-menu-list" id="carmenu">
+
+
+          </ul>
+
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section section-divider white cta"
+        style="background-image: url('imgs/hero-bg4.jpg') ; height: 890px;">
+        <div class="container">
+
+          <div class="cta-content">
+
+            <h2 class="h2 section-title">
+              Discover the Legacy of the
+              <span class="span">Black Ghost !</span>
+            </h2>
+
+            <p class="section-text">
+              Experience the smooth power of large-displacement engines, ranging from inline-six to V12 configurations,
+              ensuring a luxurious driving experience.
+            </p>
+
+            <button class="btn btn-hover">View Now</button>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DELIVERY
+      -->
+
+      <section class="section section-divider gray delivery">
+        <div class="container">
+
+          <div class="delivery-content">
+
+            <h2 class="h2 section-title">
+              Travel through Time with the <span class="span">Legendary Black</span> Ghost .
+            </h2>
+
+            <p class="section-text">
+              time capsules embodying the craftsmanship and style of past eras. Owning one means owning a piece of
+              history, celebrating automotive heritage and design evolution.
+            </p>
+
+            <button class="btn btn-hover">View More</button>
+          </div>
+
+          <figure class="cloud">
+            <img src="imgs/cloud-bg.png" width="700" height="602" loading="lazy" alt="clouds" class="w-100">
+
+            <img src="imgs/car.png" width="1000" height="880" loading="lazy" alt="delivery boy"
+              class="w-100 delivery-img" data-delivery-boy>
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section section-divider white testi">
+        <div class="container">
+
+          <p class="section-subtitle">Testimonials</p>
+
+          <h2 class="h2 section-title">
+            Our Real <span class="span">Hero's</span>
+          </h2>
+
+          <p class="section-text">
+            Driving Innovation, Powering Progress.
+          </p>
+
+          <ul class="testi-list has-scrollbar">
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="profile-wrapper">
+
+                  <figure class="avatar">
+                    <img src="imgs/Henry_ford_1919.jpg" width="80" height="80" loading="lazy" alt="Henry Ford">
+                  </figure>
+
+                  <div>
+                    <h3 class="h4 testi-name">Henry Ford</h3>
+
+                    <p class="testi-title">Founder of Ford</p>
+                  </div>
+
+                </div>
+
+                <blockquote class="testi-text">
+                  " system that launched the mass production and sale of affordable automotives to the public."
+                </blockquote>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="profile-wrapper">
+
+                  <figure class="avatar">
+                    <img src="imgs/Sir William Lyons 1901.jpg" width="80" height="80" loading="lazy"
+                      alt="Sir William Lyons">
+                  </figure>
+
+                  <div>
+                    <h3 class="h4 testi-name">Sir William Lyons</h3>
+
+                    <p class="testi-title">Founder of Jaguar</p>
+                  </div>
+
+                </div>
+
+                <blockquote class="testi-text">
+                  "Since the first Jaguar car was produced in 1935, we have pushed the boundaries of what is possible ."
+                </blockquote>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="profile-wrapper">
+
+                  <figure class="avatar">
+                    <img src="imgs/John_Francis_Dodge.jpg" width="80" height="80" loading="lazy"
+                      alt="John_Francis_Dodge">
+                  </figure>
+
+                  <div>
+                    <h3 class="h4 testi-name">John Dodge</h3>
+
+                    <p class="testi-title">Founder of Dodge</p>
+                  </div>
+
+                </div>
+
+                <blockquote class="testi-text">
+                  "Dodge vehicles have historically included performance cars, and for much of its existence Dodge ."
+                </blockquote>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <!-- 
+        - #BANNER
+      -->
+
+      <section class="section section-divider gray banner">
+        <div class="container">
+
+          <ul class="banner-list">
+
+            <li class="banner-item banner-lg">
+              <div class="banner-card">
+
+                <img src="imgs/mustang.jpg" width="550" height="450" loading="lazy" alt="mustang" class="banner-img">
+
+                <div class="banner-item-content">
+
+
+                  <h3 class="banner-title">Ford Mustang</h3>
+
+                  <p class="banner-text">2018 Ford Mustang GT 5.0</p>
+
+                  <button class="btn">Book Now</button>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="banner-item banner-sm">
+              <div class="banner-card">
+
+                <img src="imgs/jaguar.jpg" width="550" height="465" loading="lazy" alt="jaguar" class="banner-img">
+
+                <div class="banner-item-content">
+                  <h3 class="banner-title">Jaguar</h3>
+
+                  <p class="banner-text">The Art of Performance</p>
+
+                  <button class="btn">Book Now
+                  </button>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="banner-item banner-sm">
+              <div class="banner-card">
+
+                <img src="imgs/Luxury Limousines.jpg" width="550" height="465" loading="lazy" alt="Limousines"
+                  class="banner-img">
+
+                <div class="banner-item-content">
+                  <h3 class="banner-title">Limousines</h3>
+
+                  <p class="banner-text">introduced to Giovanni Giusti</p>
+
+                  <button class="btn">Book Now</button>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="banner-item banner-md">
+              <div class="banner-card">
+
+                <img src="imgs/mt.jpg" width="550" height="220" loading="lazy" alt="Mustang" class="banner-img">
+
+                <div class="banner-item-content">
+                  <h3 class="banner-title">Ford Mustang</h3>
+
+                  <p class="banner-text">Ride the Legend, Drive the Ford Mustang.</p>
+
+                  <button class="btn">Book Now Now</button>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section section-divider white blog" id="blog">
+        <div class="container">
+
+          <p class="section-subtitle">Latest Blog Posts</p>
+
+          <h2 class="h2 section-title">
+            This is All About <span class="span">Cars</span>
+          </h2>
+
+          <p class="section-text">
+            Spirit of Freedom
+          </p>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="imgs/Ford_Mustang_.jpg" width="600" height="390" loading="lazy"
+                    alt=" Unleashing the Spirit of Freedom: Exploring the Iconic Ford Mustang" class="w-100">
+
+                  <div class="badge">beige</div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">Jan 01 2023</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">Ford Family</p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">What Do You Think About V8 Engine?</a>
+                  </h3>
+
+                  <p class="card-text">
+                    The Classical Ford Mustang having Maximum Speed...
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="imgs/ford model A.jpg" width="600" height="390" loading="lazy" alt="ford model A"
+                    class="w-100">
+
+                  <div class="badge">Teal</div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">May 01 2023</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">Ford Family </p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Ford model A demand and supply .</a>
+                  </h3>
+
+                  <p class="card-text">
+                    ford model a consider as the one of the demanded Car model in the since...
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="imgs/dodge.png" width="600" height="390" loading="lazy" alt="dodge" class="w-100">
+
+                  <div class="badge">olive green</div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">Aug 01 2023</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">Dodge Family</p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Innovative Olive Green Color Dodge.</a>
+                  </h3>
+
+                  <p class="card-text">
+                    dodge rised for there color combination and the model of ...
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer">
+
+    <div class="footer-top" style="background-image: url('imgs/footer-illustration.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="" class="logo">AutoGems<span class="span">.</span></a>
+
+          <p class="footer-text">
+            Financial experts support or help you to to find out which way you can raise your funds more.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">+91 9146253761</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">sushilwatane8698@gmail.com</p>
+          </li>
+
+          <li>
+            <address class="footer-list-item">devdhanora , dist : Dharashiv 413512</address>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Opening Hours</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Monday-Friday: 08:00-22:00</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Tuesday 4PM: Till Mid Night</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Saturday: 10:00-16:00</p>
+          </li>
+
+        </ul>
+
+        <form action="" class="footer-form">
+
+          <p class="footer-list-title">Book the Vintage</p>
+
+          <div class="input-wrapper">
+
+            <input type="text" name="full_name" required placeholder="Your Name" aria-label="Your Name"
+              class="input-field">
+
+            <input type="email" name="email_address" required placeholder="Email" aria-label="Email"
+              class="input-field">
+
+          </div>
+
+          <div class="input-wrapper">
+
+            <select name="total_person" aria-label="Total person" class="input-field">
+              <option value="person">Person</option>
+              <option value="2 person">2 Person</option>
+              <option value="3 person">3 Person</option>
+              <option value="4 person">4 Person</option>
+              <option value="5 person">5 Person</option>
+            </select>
+
+            <input type="date" name="booking_date" aria-label="Reservation date" class="input-field">
+
+          </div>
+
+          <textarea name="message" required placeholder="Message" aria-label="Message" class="input-field"></textarea>
+
+          <button type="submit" class="btn">Book a Car</button>
+
+        </form>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright-text">
+          &copy; 2024 <a href="#" class="copyright-link">SushilVatane |</a> All Rights Reserved.
+        </p>
+        <p class="copyright-text">
+          &copy; <a href="#" class="copyright-link">Powered By:-</a> @sushilvatane_96k
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="objectScript.js"></script>
+  <script src="script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
