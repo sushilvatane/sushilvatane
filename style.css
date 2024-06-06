@@ -12,17 +12,17 @@ html {
 }
 
 body {
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 1s, color .5s;
 }
 
 a {
     text-decoration: none;
     color: #1c1e53;
-    transition: color 0.3s ease;
+    transition: color 1s ease;
 }
 
 a:hover {
-    color: #5e3bee !important;
+    color: #fdc842 !important;
 }
 
 h5 {
@@ -76,40 +76,36 @@ footer .top ul {
     background: none;
     padding: 4px;
     border-radius: 2.6px;
-    border: 1px solid black;
+    border: 1px solid #767676;
     font-size: 1.5rem;
     cursor: pointer;
-  
-  
-}
-.dark-mode-toggle:hover{
-    background-color: #5e3bee;
-    border-color: #5e3bee;
-    color: #fff;
-}
+background-color: #eeeeef;
 
-body.dark-mode ,.main.dark-mode{
+}
+body.dark-mode,
+.main.dark-mode {
     background-color: #3f3e3e;
     color: #232121;
 }
+
 footer.dark-mode {
     background-color: #525252;
-} 
+}
 
 
 nav .contact-btn {
-    color: #1c1e53;
+    color: #fdffe4;
     background-color: transparent;
     padding: 12px 16px;
     border-radius: 5px;
-    border: 1px solid #1c1e53;
+    border: 1px solid #fdffe4;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-nav .contact-btn:hover{
-    background-color: #5e3bee;
-    border-color: #5e3bee;
+nav .contact-btn:hover {
+    background-color: #fdc842;
+    border-color: #fdc842;
     color: #fff;
 }
 
@@ -121,8 +117,13 @@ nav button#menuButton {
     padding: 7px;
 }
 
+nav button#menuButton:hover{
+   
+ cursor: pointer;
+
+}
 .main {
-    background-color: #deebee;
+    background-color: #006b6a;
     padding: 90px 85px;
     display: flex;
     align-items: center;
@@ -143,11 +144,11 @@ nav button#menuButton {
 }
 
 .main .left h3 span {
-    color: #5e3bee;
+    color: #fdc842;
 }
 
 .main .left p {
-    color: #1c1e53;
+    color: #fdffe4;
     font-size: 22px;
     margin-top: 20px;
 }
@@ -156,7 +157,7 @@ nav button#menuButton {
     margin-top: 40px;
     color: #fff;
     cursor: pointer;
-    background-color: #5e3bee;
+    background-color: #fdc842;
     padding: 14px 24px;
     border: 1px solid transparent;
     border-radius: 5px;
@@ -187,7 +188,7 @@ nav button#menuButton {
 }
 
 .skills .skill-items .item {
-    background-color: #deebee;
+    background-color: #006b6a;
     width: 25%;
     border-radius: 10px;
     padding: 32px;
@@ -197,7 +198,7 @@ nav button#menuButton {
 }
 
 .skills .skill-items .item:hover {
-    border-color: #5e3bee;
+    border-color: #fdc842;
 }
 
 .skills .skill-items .item .icon {
@@ -226,7 +227,7 @@ nav button#menuButton {
     margin-top: 20px;
     font-size: 14px;
     line-height: 22px;
-    color: #1c1e53;
+    color: #fdffe4;
 }
 
 .about {
@@ -237,7 +238,7 @@ nav button#menuButton {
 }
 
 .about .left {
-    background-color: #deebee;
+    background-color: #006b6a;
     border-radius: 10px 10px 35px 35px;
 }
 
@@ -251,7 +252,7 @@ nav button#menuButton {
 }
 
 .portfolio {
-    /* background-color: #deebee; */
+    /* background-color: #006b6a; */
     padding: 110px 85px;
 }
 
@@ -295,7 +296,7 @@ nav button#menuButton {
 }
 
 .portfolio .portfo-items .item:hover {
-    border-color: #5e3bee;
+    border-color: #fdc842;
 }
 
 .portfolio .portfo-items .item img {
@@ -320,7 +321,7 @@ nav button#menuButton {
 .portfolio .portfo-items .item .info a {
     text-decoration: underline;
     text-underline-offset: 10px;
-    text-decoration-color: #5e3bee;
+    text-decoration-color: #fdc842;
 }
 
 .portfolio .portfo-items .item .info a i {
@@ -355,7 +356,7 @@ nav button#menuButton {
 }
 
 .feedback .customers .item:hover {
-    border-color: #5e3bee;
+    border-color: #fdc842;
 }
 
 .feedback .customers .item p {
@@ -387,7 +388,7 @@ nav button#menuButton {
 }
 
 footer {
-    background-color: #deebee;
+    background-color: #006b6a;
     padding: 85px;
     display: flex;
     flex-direction: column;
@@ -421,6 +422,21 @@ footer .bottom p {
 footer .bottom .links a {
     font-size: 12px;
     margin-left: 14px;
+}
+
+.card {
+    width: 30px;
+    height: 30px;
+    background-color: #3D5AFE;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1;
+    opacity: .6;
+    pointer-events: none;
+    box-shadow: 0 0 10px 20px #3D5AFD,
+        0 0 20px 30px #6378ee,
+        0 0 30px 40px #3d5afd;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
 }
 
 @media screen and (max-width: 1200px) {
@@ -600,9 +616,11 @@ footer .bottom .links a {
     nav .logo a {
         font-size: 18px;
     }
-    nav .contact-btn{
+
+    nav .contact-btn {
         display: none;
     }
+
     .main .left h3 {
         font-size: 32px;
     }
