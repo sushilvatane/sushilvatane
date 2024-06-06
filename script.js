@@ -33,3 +33,17 @@ function disableDarkMode() {
     footer.classList.remove('dark-mode');
     localStorage.setItem('dark-mode', 'disabled');
 }
+document.addEventListener("DOMContentLoaded", function() {
+    const card = document.querySelector(".card");
+    const damping = 0.1;
+
+    document.addEventListener("mousemove", function(e) {
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+
+        card.style.left = mouseX + "px";
+        card.style.top = mouseY + "px";
+        card.style.right = mouseX + "px";
+        card.style.bottom = mouseY + "px";
+    });
+});
