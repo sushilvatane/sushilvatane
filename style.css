@@ -95,10 +95,10 @@ footer.dark-mode {
 
 nav .contact-btn {
     color: #fdffe4;
-    background-color: transparent;
+    background-color: #cccccc;
     padding: 12px 16px;
     border-radius: 5px;
-    border: 1px solid #fdffe4;
+    border: 1px solid #cccccc;
     cursor: pointer;
     transition: all 0.3s ease;
 }
