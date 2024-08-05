@@ -13,7 +13,7 @@
 
 <body>
 <div class="card"></div>
-    <nav>
+ <div class="body-container"> <nav>
         <div class="logo">
             <img src="logo.png">
             <a href="" target="_blank">SushilVatane</a>
@@ -40,10 +40,16 @@
                 My journey in web development has equipped me with a strong foundation in designing and implementing
                 responsive, efficient, and visually appealing web applications.
             </p>
-            <button>Let's Do It !</button>
-        </div>
+            <button id="openFormBtn" popovertarget="contactUsContainer" class="openFormBtn">Let's Do It !</button>
+        
+        <div id="contactUsContainer" popover class="contactUsContainer" ><h1>Contact Us </h1>
+            <input id="input" class="textInput" type="text" placeholder="Enter Ur Name">
+            <input id="input" type="tel" class="mobInput" placeholder="Enter Ur Mob">
+            <button id="button" class="subBtn">Submit</button>
+            <button id="button" class="canBtn">Cancel</button>
+    </div></div>
         <div class="right">
-            <img src="myimg1.png">
+            <img src="myimg.png">
         </div>
     </div>
 
@@ -115,7 +121,7 @@
                 <div class="info">
                     <h4>Vintage Car's</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                        A nostalgic hub for enthusiasts to explore classic automobiles and their histories.
                     </p>
                     <a href="./car/index.html" target="_blank" class="view-btn">View<i class='bx bx-link-external'></i></a>
                 </div>
@@ -125,7 +131,7 @@
                 <div class="info">
                     <h4>Login page</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                        A secure entry portal for users to access personalized features and content.
                     </p>
                     <a href="./log in page/boi.html">View <i class='bx bx-link-external'></i></a>
                 </div>
@@ -135,7 +141,7 @@
                 <div class="info">
                     <h4>Weather</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                        A comprehensive source for real-time weather forecasts and climate information.
                     </p>
                     <a href="./weather/index.html">View<i class='bx bx-link-external'></i></a>
                 </div>
@@ -217,18 +223,10 @@
                 <img src="logo.png">
                 <a href="">SushilVatane</a>
             </div>
-            <!-- <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Youtube</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul> -->
             <div class="social-links">
                 <a href="https://github.com/sushilvatane"><i class='bx bxl-github'></i></a>
                 <a href="https://instagram.com/sushilvatane_96k"><i class='bx bxl-instagram'></i></a>
                 <a href="https://Wa.me/+918275825369"><i class='bx bxl-whatsapp'></i></a>
-                <!-- <a href="#"><i class='bx bxl-linkedin-square'></i></a> -->
             </div>
         </div>
         <div class="separator"></div>
@@ -243,6 +241,7 @@
             </div>
         </div>
     </footer>
+</div>  
 
     <script src="script.js"></script>
 </body>
